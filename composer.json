@@ -1,8 +1,12 @@
 {
-    "name": "baao/clear-view-cache",
+    "name": "joshuapack/clear-view-cache",
     "description": "Simple View Cache Cleaner for laravel lumen",
     "license": "MIT",
     "authors": [
+        {
+            "name": "Joshua Pack",
+            "email": "joshua@htdsoftware.com"
+        },
         {
             "name": "michael",
             "email": "info@meine-buybox.de"
@@ -10,7 +14,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Baao\\ClearViewCache\\": "src"
+            "JoshuaPack\\ClearViewCache\\": "src"
         }
     },
     "require": {}

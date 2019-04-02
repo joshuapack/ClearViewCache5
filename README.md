@@ -1,13 +1,13 @@
 # ClearViewCache
-Clears the cached view files, for laravel lumen
+Clears the cached view files, for laravel lumen 5.8
 
 # Installation
-    composer require baao/clear-view-cache
+    composer require joshuapack/clear-view-cache
 
 # Register the Service Provider 
 in bootstrap/app.php
 
-    $app->register('Baao\ClearViewCache\ClearViewCacheServiceProvider');
+    $app->register('JoshuaPack\ClearViewCache\ClearViewCacheServiceProvider');
 
 # Clear all cached views:
     php artisan view:clear

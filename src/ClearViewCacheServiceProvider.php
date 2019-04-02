@@ -1,8 +1,9 @@
 <?php
 
-namespace Baao\ClearViewCache;
+namespace JoshuaPack\ClearViewCache;
 
 use Illuminate\Support\ServiceProvider;
+use JoshuaPack\ClearViewCache\ClearViewCache;
 
 class ClearViewCacheServiceProvider extends ServiceProvider
 {
@@ -14,17 +15,6 @@ class ClearViewCacheServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app['command.view.clear'] = $this->app->share(
-            function () {
-                return new ClearViewCache();
-            }
-        );
-
-        $this->commands(['command.view.clear']);
-    }
-
-    public function provides()
-    {
-        return ['command.view.clear'];
+        $this->commands(ClearViewCache::class);
     }
 }

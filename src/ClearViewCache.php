@@ -1,6 +1,6 @@
 <?php
 
-namespace Baao\ClearViewCache;
+namespace JoshuaPack\ClearViewCache;
 
 use Illuminate\Console\Command;
 
@@ -14,13 +14,14 @@ class ClearViewCache extends Command
      */
 
     protected $name = 'view:clear';
+
     /**
      * The console command description.
      *
      * @var string
      */
-
-    protected $description = 'Clear all compiled view files.'; //
+    
+    protected $description = 'Clear all compiled view files.';
 
     /**
      * Create a new command instance.
@@ -47,5 +48,6 @@ class ClearViewCache extends Command
                 $this->info("File $file deleted!");
             }
         }
+        $this->info("Finished Clearing View!");
     }
 }
